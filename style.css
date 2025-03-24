@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+
+
+:root {
+    --white: white;
+    --correct: green;
+    --wrong: rgb(215, 19, 19);
+    --hover:rgb(72, 69, 69);
+
+}
+
+#head {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+
+    /* Fiery Pokémon Theme Gradient (Red to Gold) */
+    background: linear-gradient(to right, #e42222 30%, #ff8c00, #d4a300);
+   
+
+    /* Apply Gradient to Text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* Makes text transparent to show the gradient */
+
+    -webkit-text-stroke: 2px black; /* Creates a sharp black outline */
+    /* text-stroke: 2px black; Standard property (not widely supported) */
+
+
+    /* Ensure the background fills the text */
+    display: inline-block;
+}
+
+
+
+body{
+    background-image: url("https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/sword-shield/pokemon-in-the-wild.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    /* background: linear-gradient(150deg, #1a2a6c 0%, #b21f1f 50%, #fdbb2d 100%); */
+    /* background: linear-gradient(150deg, #4b0082 0%, #9400d3 50%, #ffd700 100%); */
+    /* background: linear-gradient(150deg, #1a1a2e 0%, #16213e 50%, #e94560 100%); */
+
+
+
+    font-family: Pixelated, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; 
+    margin: 0;
+    padding: 0;  
+}
+
+.head{
+    font-size: xx-large;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: "Rammetto One";
+    font-weight: bolder;
+    width: 300px;
+    margin: auto;
+    animation: pop 2s infinite ease-in-out;
+
+}
+@keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.image{
+    padding: 20px;
+}
+.pokeimg{
+    width: 200px;
+    height: 200px;
+}
+
+.options{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 20px;
+}
+
+.options button{
+    padding: 15px;
+    border: none;
+    font-family: Pixelated, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-size: 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 200px;
+}
+
+button:hover{
+    background-color: var(--hover);
+    color: white;
+    transform: scale(1.07);
+    transition: all 0.25s ease-in-out;
+}
+
+button.correct{
+    background-color: var(--correct);
+    color: black;
+}
+button.wrong{
+    background-color: var(--wrong);
+    color: black;
+}
+
+.points{
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#loading img{
+    width: 200px;
+    height: 200px;
+    /* display: none; */
+}
+
+.show{
+    display: flex;
+    flex-direction: column;
+    /* display: block; */
+}
+
+.hide{
+    display: none;
+}
