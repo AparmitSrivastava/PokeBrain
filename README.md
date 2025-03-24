@@ -13,4 +13,4 @@ A fun MCQ-based game where players guess Pokémon names.
 
 ## Tech Stack 🛠️
 - HTML, CSS, JavaScript
-- Pokémon API
+- Restful API
