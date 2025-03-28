@@ -11,9 +11,11 @@ A fun MCQ-based game where players guess Pokémon names.
 2. Select the correct name from the given choices.
 3. Earn points for correct answers!
 
+ Live Demo - https://aparmitsrivastava.github.io/PokeBrain/
+
 ### Tech Stack 🛠️
 - HTML, CSS, JavaScript
 - Restful API
 
- Live Demo - https://aparmitsrivastava.github.io/PokeBrain/
+
 
